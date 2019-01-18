@@ -36,4 +36,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Dirac headset effect
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.audio.soundfx.dirac=true \
-    persist.audio.dirac.speaker=true
+    persist.audio.dirac.speaker=true \
+    persist.vendor.camera.stats.test=5 \
+    persist.vendor.flash.light.lux=340 \
+    persist.vendor.flash.low.lux=390 \
+    persist.vendor.imx376_ofilm.light.lux=280 \
+    persist.vendor.imx376_ofilm.low.lux=310 \
+    persist.vendor.imx376_sunny.light.lux=280 \
+    persist.vendor.imx376_sunny.low.lux=310 \
+    persist.vendor.ov13855_sunny.light.lux=370 \
+    persist.vendor.ov13855_sunny.low.lux=385 \
+    persist.vendor.s5k3l8_ofilm.light.lux=367 \
+    persist.vendor.s5k3l8_ofilm.low.lux=379
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.faceunlock,com.android.camera

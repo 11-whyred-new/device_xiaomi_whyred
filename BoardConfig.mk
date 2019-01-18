@@ -37,6 +37,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+
 # Kernel
 TARGET_KERNEL_CONFIG := whyred_defconfig
 
