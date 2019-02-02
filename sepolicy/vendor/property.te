@@ -8,3 +8,8 @@ type fm_prop, property_type;
 
 # QTI Thermal
 type vendor_thermal_prop, property_type;
+
+type vendor_power_prop, property_type;
+
+type dirac_prop, property_type;
+
