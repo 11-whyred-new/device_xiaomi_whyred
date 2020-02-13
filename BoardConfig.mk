@@ -183,6 +183,10 @@ TARGET_PROVIDES_POWERHAL := true
 #Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 
