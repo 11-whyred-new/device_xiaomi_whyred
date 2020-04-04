@@ -141,4 +141,14 @@
 
     <!-- Should we filter any display modes which are unampped? --> <bool 
     name="config_filterDisplayModes">true</bool>
+
+    <!-- Whether device supports internal audio recording -->
+    <bool name="config_hasInternalAudioRecordingSupport">true</bool>
+    
+    <!-- Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">4</integer>
+
+    <!-- Whether Multiuser UI should be shown -->
+    <bool name="config_enableMultiUserUI">true</bool>
+
 </resources>
