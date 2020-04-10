@@ -234,6 +234,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.procedure_bytes=SKIP \
     persist.radio.calls.on.ims=1 \
     persist.dbg.wfc_avail_ovr=1
+    persist.vendor.radio.add_power_save=1 \
+    ro.vendor.use_data_netmgrd=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.use_old_mnc_mcc_format=true \
