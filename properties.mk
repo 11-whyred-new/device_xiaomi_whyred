@@ -24,3 +24,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ov13855_sunny.low.lux=385 \
     persist.vendor.s5k3l8_ofilm.light.lux=367 \
     persist.vendor.s5k3l8_ofilm.low.lux=379
+
+# Dirac
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dirac.acs.controller=qem \
+    persist.dirac.acs.storeSettings=1 \
+    persist.dirac.acs.ignore_error=1
+
+# Dirac headset effect
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.audio.soundfx.dirac=true \
+    persist.audio.dirac.speaker=true
