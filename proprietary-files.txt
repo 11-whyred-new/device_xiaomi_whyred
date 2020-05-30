@@ -721,6 +721,8 @@ vendor/lib64/sensors.ssc.so|42577aa881baa287ec037c0e59972ad0e0358b08
 vendor/etc/thermal-engine.conf
 vendor/etc/thermal-engine-map.conf
 vendor/etc/thermal-engine-normal.conf
+vendor/etc/thermal-engine-sgame.conf
+vendor/etc/thermal-engine-pubgmhd.conf
 vendor/bin/thermal-engine
 vendor/lib/libthermalfeature.so
 vendor/lib64/libthermalfeature.so
