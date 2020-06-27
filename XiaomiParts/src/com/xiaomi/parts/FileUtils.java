@@ -114,6 +114,14 @@ public class FileUtils {
         return defValue;
     }
 
+    static boolean getFilesValueAsBoolean(String filename, boolean defValue) {
+        String fileValue = readLine(filename);
+        if (fileValue != null) {
+            return !fileValue.equals("N");
+        }
+        return defValue;
+    }
+
     static String getValue(String filename) {
         if (filename == null) {
             return null;
