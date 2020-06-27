@@ -44,7 +44,7 @@ public class BacklightDimmer implements OnPreferenceChangeListener {
     }
 
     public static boolean isCurrentlyEnabled(Context context) {
-        return FileUtils.getFileValueAsBoolean(getFile(), false);
+        return FileUtils.getFilesValueAsBoolean(getFile(), false);
     }
 
     @Override
