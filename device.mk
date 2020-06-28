@@ -350,6 +350,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Recorder
+PRODUCT_PACKAGES += \
+    KimciRecorder
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
