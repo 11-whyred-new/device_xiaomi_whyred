@@ -402,6 +402,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.performance.sdm660.rc
 
+# Recorder
+PRODUCT_PACKAGES += \
+    KimciRecorder
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.class_main.sh \
