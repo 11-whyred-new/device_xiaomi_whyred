@@ -175,7 +175,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 ro.vendor.qti.va_aosp.support=1
 
 # Media
-debug.stagefright.omx_default_rank=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
 vendor.vidc.dec.enable.downscalar=1
