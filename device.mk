@@ -424,6 +424,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libOmxSwVencHevc
 
+# Perf
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr \
