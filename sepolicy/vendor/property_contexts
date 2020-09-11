@@ -27,6 +27,10 @@ ro.boot.fpsensor                    u:object_r:vendor_fp_prop:s0
 # Mlipay
 persist.vendor.sys.pay.ifaa         u:object_r:ifaa_prop:s0
 
+# Power
+vendor.powerhal.dalvik.                 u:object_r:vendor_power_prop:s0
+vendor.powerhal.                        u:object_r:vendor_power_prop:s0
+
 # Thermal engine
 persist.sys.thermal.                u:object_r:thermal_prop:s0
 sys.thermal.                        u:object_r:thermal_prop:s0
