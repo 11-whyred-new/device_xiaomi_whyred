@@ -2375,6 +2375,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
 
+   <carrier_config mcc="510" mnc="09">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <carrier_config mcc="510" mnc="28">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
 
     <carrier_config mcc="310" mnc="120">
         <boolean name="rtt_supported_bool" value="true" />
