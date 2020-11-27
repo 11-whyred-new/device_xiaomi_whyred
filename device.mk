@@ -75,6 +75,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     KimciRecorder
 
+# Retro
+PRODUCT_PACKAGES += \
+    RetroMusic
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
