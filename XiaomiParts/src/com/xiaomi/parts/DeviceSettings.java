@@ -19,6 +19,7 @@ import android.util.Log;
 
 import com.xiaomi.parts.kcal.KCalSettingsActivity;
 import com.xiaomi.parts.ambient.AmbientGesturePreferenceActivity;
+import com.xiaomi.parts.speaker.ClearSpeakerActivity;
 import com.xiaomi.parts.preferences.SecureSettingListPreference;
 import com.xiaomi.parts.preferences.SecureSettingSwitchPreference;
 import com.xiaomi.parts.preferences.VibrationSeekBarPreference;
@@ -74,6 +75,10 @@ public class DeviceSettings extends PreferenceFragment implements
     private SwitchPreference mSelinuxMode;
     private SwitchPreference mSelinuxPersistence;
 
+    private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
+    private Preference mClearSpeakerPref;
+
+
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.xiaomiparts_preferences, rootKey);
@@ -95,6 +100,13 @@ public class DeviceSettings extends PreferenceFragment implements
         torch_brightness.setEnabled(FileUtils.fileWritable(TORCH_1_BRIGHTNESS_PATH) &&
                 FileUtils.fileWritable(TORCH_2_BRIGHTNESS_PATH));
         torch_brightness.setOnPreferenceChangeListener(this);
+
+        mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
+        mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), ClearSpeakerActivity.class);
+            startActivity(intent);
+            return true;
+        });
 
         boolean enhancerEnabled;
         try {
