@@ -71,7 +71,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_USB_FASTCHARGE = "fastcharge";
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
 
-
     private SwitchPreference mSelinuxMode;
     private SwitchPreference mSelinuxPersistence;
 
