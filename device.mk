@@ -81,6 +81,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
 
+# XiaomiParts
+PRODUCT_PACKAGES += \
+   XiaomiParts
+
 # Shims
 PRODUCT_PACKAGES += \
     libcamera_sdm660_shim
