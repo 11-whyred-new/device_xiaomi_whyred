@@ -24,12 +24,15 @@ $(call inherit-product, vendor/dot/config/common.mk)
 
 # DotOS Properties
 TARGET_INCLUDE_WIFI_EXT := true
-TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ARCORE := true
 DOT_BUILD_TYPE := PREDATOR-EDITION
 TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
