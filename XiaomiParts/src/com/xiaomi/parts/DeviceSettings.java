@@ -72,6 +72,10 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String CATEGORY_USB_FASTCHARGE = "usb_fastcharge";
     public static final String PREF_USB_FASTCHARGE = "usb_charge";
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
+    
+     public static final String CATEGORY_FASTCHARGE = "fastcharge";
+    public static final String PREF_FASTCHARGE = "fast_charge";
+    public static final String FASTCHARGE_PATH = "/sys/class/power_supply/bms/fastcharge_mode";
 
     private SwitchPreference mSelinuxMode;
     private SwitchPreference mSelinuxPersistence;
@@ -85,6 +89,8 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingSwitchPreference mTouchboost;
 
     private SecureSettingSwitchPreference mUSBFastcharge;
+    private SecureSettingSwitchPreference mFastcharge;
+
     
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -171,6 +177,16 @@ public class DeviceSettings extends PreferenceFragment implements
         mSelinuxPersistence.setChecked(getContext()
         .getSharedPreferences("selinux_pref", Context.MODE_PRIVATE)
         .contains(PREF_SELINUX_MODE));
+        
+         if (FileUtils.fileWritable(FASTCHARGE_PATH)) {
+            mFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_FASTCHARGE);
+            mFastcharge.setEnabled(Fastcharge.isSupported());
+            mFastcharge.setChecked(Fastcharge.isCurrentlyEnabled(this.getContext()));
+            mFastcharge.setOnPreferenceChangeListener(new Fastcharge(getContext()));
+        }
+//          else {
+//            getPreferenceScreen().removePreference(findPreference(CATEGORY_FASTCHARGE));
+//        }
 
         if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
             mUSBFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);
