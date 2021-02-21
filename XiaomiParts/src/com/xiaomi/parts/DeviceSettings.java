@@ -69,7 +69,8 @@ public class DeviceSettings extends PreferenceFragment implements
     private static final String TORCH_2_BRIGHTNESS_PATH = "/sys/devices/soc/800f000.qcom," +
             "spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/max_brightness";
 
-    public static final String PREF_USB_FASTCHARGE = "fastcharge";
+    public static final String CATEGORY_USB_FASTCHARGE = "usb_fastcharge";
+    public static final String PREF_USB_FASTCHARGE = "usb_charge";
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
 
     private SwitchPreference mSelinuxMode;
@@ -83,7 +84,8 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String MSM_TOUCHBOOST_PATH = "/sys/module/msm_performance/parameters/touchboost";
     private SecureSettingSwitchPreference mTouchboost;
 
-
+    private SecureSettingSwitchPreference mUSBFastcharge;
+    
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.xiaomiparts_preferences, rootKey);
@@ -170,10 +172,14 @@ public class DeviceSettings extends PreferenceFragment implements
         .getSharedPreferences("selinux_pref", Context.MODE_PRIVATE)
         .contains(PREF_SELINUX_MODE));
 
-        SwitchPreference usbfastCharger = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);
-        usbfastCharger.setEnabled(FileUtils.fileWritable(USB_FASTCHARGE_PATH));
-        usbfastCharger.setChecked(FileUtils.getFileValueAsBoolean(USB_FASTCHARGE_PATH, true));
-        usbfastCharger.setOnPreferenceChangeListener(this);
+        if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
+            mUSBFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);
+            mUSBFastcharge.setEnabled(USBFastcharge.isSupported());
+            mUSBFastcharge.setChecked(USBFastcharge.isCurrentlyEnabled(this.getContext()));
+            mUSBFastcharge.setOnPreferenceChangeListener(new USBFastcharge(getContext()));
+        } else {
+            getPreferenceScreen().removePreference(findPreference(CATEGORY_USB_FASTCHARGE));
+        }
 
         Preference kcal = findPreference(PREF_DEVICE_KCAL);
         kcal.setOnPreferenceClickListener(preference -> {
@@ -259,10 +265,6 @@ public class DeviceSettings extends PreferenceFragment implements
                 } else {
                     this.getContext().stopService(fpsinfo);
                 }
-                break;
-
-            case PREF_USB_FASTCHARGE:
-                FileUtils.setValue(USB_FASTCHARGE_PATH, (boolean) value);
                 break;
 
             default:
