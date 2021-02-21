@@ -87,15 +87,17 @@
             android:title="@string/ambient_display_gestures_title" />
 
     </PreferenceCategory>
-
+    
     <PreferenceCategory
-        android:title="@string/other_category" >
+        android:key="usb_fastcharge"
+        android:title="@string/usb_fastcharge_category" >
+
         <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
-            android:key="fastcharge"
-            android:defaultValue="false"
-            android:title="@string/fastcharge_title"
-            android:icon="@drawable/ic_fastcharge"
-            android:summary="@string/fastcharge_summary" />
+            android:key="usb_charge"
+            android:defaultValue="true"
+            android:title="@string/usb_fastcharge_title"
+            android:icon="@drawable/ic_usb_fastcharge"
+            android:summary="@string/usb_fastcharge_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory
