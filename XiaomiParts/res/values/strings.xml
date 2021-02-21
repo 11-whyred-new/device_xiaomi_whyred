@@ -15,6 +15,11 @@
     <!-- Audio amplification -->
     <string name="headphone_gain">Headphone gain</string>
     <string name="microphone_gain">Microphone gain</string>
+    
+    <!-- Fastcharge -->
+    <string name="fastcharge_category">Fastcharge</string>
+    <string name="fastcharge_title">Enable/Disable Fastcharge</string>
+    <string name="fastcharge_summary">Disable to reduce the heat produced while charging or to extend the lifespan of the battery</string>
 
     <!-- USB fastcharge -->
     <string name="usb_fastcharge_category">USB fastcharge</string>
