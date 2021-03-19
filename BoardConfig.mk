@@ -57,7 +57,7 @@ USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-11-01
+VENDOR_SECURITY_PATCH := 2020-09-05
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_whyred
