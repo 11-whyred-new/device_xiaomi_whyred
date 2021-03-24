@@ -95,6 +95,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0-service
 
+# Perf
+PRODUCT_COPY_FILES += \ 
+    $(DEVICE_PATH)/configs/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml
+
 # Adapt Launch
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml
