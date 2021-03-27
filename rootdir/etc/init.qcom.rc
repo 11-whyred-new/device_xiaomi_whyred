@@ -872,3 +872,8 @@ on late-fs
     # Block layer tuning: discard chunk size up to 128MB
     # Otherwise, contiguous discards can be merged
     write /sys/block/sda/queue/discard_max_bytes 134217728    
+
+on boot
+    # FPS Info
+    chown system graphics /sys/class/graphics/fb0/measured_fps
+    chmod 0666 /sys/class/graphics/fb0/measured_fps
