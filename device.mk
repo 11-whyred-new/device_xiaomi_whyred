@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+#Copyright (C) 2018-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -82,6 +82,10 @@ PRODUCT_COPY_FILES += \
 # AuthSecret 
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0-service
+
+# Adapt Launch
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml
 
 # Audio
 PRODUCT_PACKAGES += \
