@@ -397,3 +397,8 @@ on property:persist.sys.display_gamma=1
 
 on property:persist.sys.display_gamma=2
     write /sys/class/graphics/fb0/msm_fb_gamma 2
+
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/uni
