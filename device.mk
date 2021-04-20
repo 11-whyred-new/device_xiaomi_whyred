@@ -47,6 +47,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# APEX
+ENABLE_APEX := true
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 

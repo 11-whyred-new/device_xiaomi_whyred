@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_whyred.mk
+    $(LOCAL_DIR)/ssos_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_whyred-user \
-    havoc_whyred-userdebug \
-    havoc_whyred-eng
+    ssos_whyred-user \
+    ssos_whyred-userdebug \
+    ssos_whyred-eng
