@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_whyred.mk
+    $(LOCAL_DIR)/dot_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_whyred-user \
-    havoc_whyred-userdebug \
-    havoc_whyred-eng
+    dot_whyred-user \
+    dot_whyred-userdebug \
+    dot_whyred-eng
