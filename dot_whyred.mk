@@ -34,6 +34,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 
+# Inherit from custom vendor
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
