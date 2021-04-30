@@ -38,7 +38,7 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := whyred-perf_defconfig
+TARGET_KERNEL_CONFIG := whyred_defconfig
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml

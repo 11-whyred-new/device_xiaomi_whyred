@@ -27,7 +27,7 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 DEVICE_PATH := device/xiaomi/whyred
 
 # Setup dalvik vm configs
-$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Inherit properties.mk
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
@@ -70,16 +70,17 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay 
+    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-lineage
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
 
-# XiaomiParts
-PRODUCT_PACKAGES += \
-   XiaomiParts
 
 # Shims
 PRODUCT_PACKAGES += \
