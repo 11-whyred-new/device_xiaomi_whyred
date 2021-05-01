@@ -28,6 +28,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.max.previewfps=60 \
     persist.vendor.camera.max.previewfps=60
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.faceunlock,com.android.camera
+
 # Dirac
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dirac.acs.controller=qem \
