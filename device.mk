@@ -196,6 +196,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.sdm660 \
@@ -375,6 +379,7 @@ PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libhypv_intercept \
     libmm-omxcore \
+    libOmxSwVencHevc \
     libOmxCore \
     libOmxAacEnc \
     libOmxAmrEnc \
