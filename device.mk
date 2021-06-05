@@ -480,7 +480,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     $(DEVICE_PATH)/configs/thermal/thermal-engine-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map.conf \
     $(DEVICE_PATH)/configs/thermal/thermal-engine-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal.conf \
-    $(DEVICE_PATH)/configs/thermal/thermal-engine-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-video.conf \
+    $(DEVICE_PATH)/configs/thermal/thermal-engine-streaming.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-streaming.conf \
 		$(DEVICE_PATH)/configs/thermal/thermal-engine-arvr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-arvr.conf \
 		$(DEVICE_PATH)/configs/thermal/thermal-engine-extreme.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-extreme.conf \
 		$(DEVICE_PATH)/configs/thermal/thermal-engine-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-nolimits.conf \
