@@ -480,7 +480,14 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     $(DEVICE_PATH)/configs/thermal/thermal-engine-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map.conf \
     $(DEVICE_PATH)/configs/thermal/thermal-engine-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal.conf \
-    $(DEVICE_PATH)/configs/thermal/thermal-engine-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-video.conf
+    $(DEVICE_PATH)/configs/thermal/thermal-engine-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-video.conf \
+		$(DEVICE_PATH)/configs/thermal/thermal-engine-arvr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-arvr.conf \
+		$(DEVICE_PATH)/configs/thermal/thermal-engine-extreme.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-extreme.conf \
+		$(DEVICE_PATH)/configs/thermal/thermal-engine-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-nolimits.conf \
+		$(DEVICE_PATH)/configs/thermal/thermal-engine-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-phone.conf \
+		$(DEVICE_PATH)/configs/thermal/thermal-engine-pubgmhd.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-pubgmhd.conf \
+		$(DEVICE_PATH)/configs/thermal/thermal-engine-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-tgame.conf \
+		$(DEVICE_PATH)/configs/thermal/thermal-engine-high.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-high.conf
 
 # USB
 PRODUCT_PACKAGES += \
