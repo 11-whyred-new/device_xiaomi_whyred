@@ -225,3 +225,8 @@ ro.vendor.sensors.dev_ori=true
 ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
+
+# IORap
+ro.iorapd.enable=true
+iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
