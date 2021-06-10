@@ -22,6 +22,15 @@ allow hal_fingerprint_whyred sysfs_fingerprint:file { write read };
 allow hal_fingerprint_whyred sysfs_wakeup:file { write open };
 allow hal_fingerprint_whyred sysfs:file { write };
 allow hal_fingerprint_whyred sysfs:file write;
+allow hal_fingerprint_whyred hal_fingerprint_whyred:netlink_socket { create bind write read };
+allow hal_fingerprint_whyred hal_perf_hwservice:hwservice_manager find;
+allow hal_fingerprint_whyred media_rw_data_file:dir search;
+allow hal_fingerprint_whyred mnt_user_file:dir search;
+allow hal_fingerprint_whyred mnt_user_file:lnk_file r_file_perms;
+allow hal_fingerprint_whyred persist_file:dir r_dir_perms;
+allow hal_fingerprint_whyred rootfs:dir read;
+allow hal_fingerprint_whyred self:netlink_socket create_socket_perms_no_ioctl;
+allow hal_fingerprint_whyred sysfs_fingerprint:file { read open write };
 
 allow hal_fingerprint_whyred hal_perf_hwservice:hwservice_manager find;
 binder_call(hal_fingerprint_whyred, hal_perf_default)
@@ -30,3 +39,6 @@ r_dir_file(hal_fingerprint_whyred, firmware_file)
 set_prop(hal_fingerprint_whyred, hal_fingerprint_prop)
 
 dontaudit hal_fingerprint_default storage_file:dir search;
+
+allow hal_fingerprint_default vfat:file { read open getattr };
+allow hal_fingerprint_default vfat:dir search;
