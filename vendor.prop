@@ -234,3 +234,7 @@ ro.vendor.sensors.mot_detect=true
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+
+# DRM Service
+drm.service.enabled=true
+media.mediadrmservice.enable=true
