@@ -238,3 +238,6 @@ iorapd.readahead.enable=true
 # DRM Service
 drm.service.enabled=true
 media.mediadrmservice.enable=true
+
+# BPF
+ro.kernel.ebpf.supported=true
