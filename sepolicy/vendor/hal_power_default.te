@@ -9,3 +9,9 @@ allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
 allow hal_power_default device_latency:chr_file { open write };
 
 set_prop(hal_power_default, vendor_power_prop)
+allow hal_power_default proc:file { open };
+allow hal_power_default proc:file { write };
+
+allow hal_power_default hal_power_default:capability sys_admin;
+
+allow hal_power_default proc:{ file lnk_file } rw_file_perms;
