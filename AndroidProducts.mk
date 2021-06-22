@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_whyred.mk
+    $(LOCAL_DIR)/p404_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_whyred-user \
-    dot_whyred-userdebug \
-    dot_whyred-eng
+    p404_whyred-user \
+    p404_whyred-userdebug \
+    p404_whyred-eng
