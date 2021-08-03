@@ -54,7 +54,7 @@
         <activity
             android:name=".kcal.KCalSettingsActivity"
             android:exported="false"
-            android:theme="@style/CustomOptionsTheme"
+            android:theme="@style/Theme.Main"
             android:label="@string/advanced_settings_kcal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -69,8 +69,8 @@
         <activity
             android:name=".ambient.AmbientGesturePreferenceActivity"
             android:icon="@drawable/ic_doze"
-            android:theme="@style/CustomOptionsTheme"
-            android:label="@string/ambient_display_gestures_title">
+            android:label="@string/ambient_display_gestures_title"
+            android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -79,8 +79,8 @@
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
             android:exported="false" 
-            android:label="@string/clear_speaker_title">
-
+            android:label="@string/clear_speaker_title"
+            android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
