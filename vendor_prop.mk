@@ -225,6 +225,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.radio.aosp_usr_pref_sel=true \
+    persist.vendor.qti.telephony.vt_cam_interface=2 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.radio.multisim.config=dsds \
     persist.vendor.radio.sib16_support=1 \
