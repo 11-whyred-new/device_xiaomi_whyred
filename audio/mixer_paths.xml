@@ -2182,7 +2182,9 @@
 
     <path name="handset-mic">
         <path name="adc1" />
-		<ctl name="IIR1 INP1 MUX" value="DEC1" />
+        <ctl name="IIR1 INP1 MUX" value="DEC1" />
+        <ctl name="DEC1 Volume" value="96" />
+        <ctl name="DEC2 Volume" value="96" />
     </path>
 
     <path name="secondary-mic">
@@ -2476,6 +2478,8 @@
 
     <path name="handset-stereo-dmic-ef">
         <path name="handset-dmic-endfire" />
+        <ctl name="DEC1 Volume" value="96" />
+        <ctl name="DEC2 Volume" value="96" />
     </path>
 
     <path name="speaker-stereo-dmic-ef">
@@ -2504,6 +2508,8 @@
 
     <path name="voice-rec-dmic-ef">
         <path name="dmic-endfire" />
+        <ctl name="DEC7 Volume" value="106"/>
+        <ctl name="DEC8 Volume" value="106"/>
     </path>
 
     <path name="voice-rec-dmic-ef-fluence">
@@ -2619,10 +2625,13 @@
 
     <path name="unprocessed-mic">
         <path name="unprocessed-handset-mic" />
+        <ctl name="DEC7 Volume" value="89"/>
     </path>
 
     <path name="unprocessed-stereo-mic">
         <path name="voice-rec-dmic-ef" />
+        <ctl name="DEC7 Volume" value="89"/>
+        <ctl name="DEC8 Volume" value="89"/>
     </path>
 
     <path name="unprocessed-quad-mic">
@@ -2631,6 +2640,7 @@
 
     <path name="unprocessed-headset-mic">
         <path name="headset-mic" />
+        <ctl name="DEC7 Volume" value="89"/>
     </path>
 
     <!-- Added for ADSP testfwk -->
