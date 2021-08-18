@@ -293,6 +293,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Hotword blobs
+$(call inherit-product, vendor/xiaomi/google/google.mk)
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
