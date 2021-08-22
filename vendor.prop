@@ -173,7 +173,7 @@ persist.vendor.dpmhalservice.enable=1
 
 # Graphics
 ro.hardware.egl=adreno
-ro.hardware.vulkan=adreno
+ro.hardware.vulkan=sdm660
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
