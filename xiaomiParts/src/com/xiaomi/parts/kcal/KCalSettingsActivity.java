@@ -1,6 +1,5 @@
 package com.xiaomi.parts.kcal;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,8 +7,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.xiaomi.parts.R;
+import com.xiaomi.parts.MonetPreferenceActivity;
 
+<<<<<<< HEAD:xiaomiParts/src/com/xiaomi/parts/kcal/KCalSettingsActivity.java
 public class KCalSettingsActivity extends Activity implements Utils {
+=======
+public class KcalSettingsActivity extends MonetPreferenceActivity {
+>>>>>>> 194fd34 ([5.2-Monet] Device Parts: Support MonetWannabe on device specific settings):xiaomiParts/src/com/xiaomi/parts/kcal/KcalSettingsActivity.java
 
     private KCalSettings mKCalSettingsFragment;
 

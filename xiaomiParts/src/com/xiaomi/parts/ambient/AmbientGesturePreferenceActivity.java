@@ -21,7 +21,9 @@ import android.os.Bundle;
 import com.xiaomi.parts.R;
 import android.preference.PreferenceActivity;
 
-public class AmbientGesturePreferenceActivity extends PreferenceActivity {
+public class AmbientGesturePreferenceActivity extends MonetPreferenceActivity {
+
+import com.xiaomi.parts.MonetPreferenceActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
