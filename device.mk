@@ -390,7 +390,8 @@ PRODUCT_PACKAGES += \
     libavmediaserviceextensions \
     libmediametrics \
     libregistermsext \
-    mediametrics
+    mediametrics \
+    android.hardware.media.omx@1.0-impl
 
 # Net
 PRODUCT_PACKAGES += \
@@ -416,7 +417,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libOmxSwVencHevc
 
 # Power
 PRODUCT_PACKAGES += \
