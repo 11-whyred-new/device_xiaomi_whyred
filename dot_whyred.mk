@@ -22,11 +22,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DOTOS stuff
+$(call inherit-product, vendor/dot/config/common.mk)
+
+# Inherit from custom vendor
+$(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# DotOS Properties
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_INCLUDE_STOCK_ARCORE := true
+DOT_BUILD_TYPE := Predator-Edition-4.19
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
