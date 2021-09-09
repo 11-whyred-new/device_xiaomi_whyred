@@ -35,6 +35,7 @@ persist.vendor.ims.disableIMSLogs=1
 persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.force_on_dc=true
 ril.subscription.types=RUIM
+persist.vendor.radio.aosp_usr_pref_sel=true 
 
 # Shutdown
 ro.build.shutdown_timeout=2
