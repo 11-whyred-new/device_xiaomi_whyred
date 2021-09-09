@@ -536,7 +536,10 @@ PRODUCT_COPY_FILES += \
 		$(DEVICE_PATH)/configs/thermal/thermal-engine-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-phone.conf \
 		$(DEVICE_PATH)/configs/thermal/thermal-engine-pubgmhd.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-pubgmhd.conf \
 		$(DEVICE_PATH)/configs/thermal/thermal-engine-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-tgame.conf \
-		$(DEVICE_PATH)/configs/thermal/thermal-engine-high.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-high.conf
+		$(DEVICE_PATH)/configs/thermal/thermal-engine-high.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-high.conf \
+    $(DEVICE_PATH)/configs/thermal/thermal-engine-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-class0.conf \
+    $(DEVICE_PATH)/configs/thermal/thermal-engine-sgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-sgame.conf \
+    $(DEVICE_PATH)/configs/thermal/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf
 
 # Sqlite
 PRODUCT_PACKAGES += \
