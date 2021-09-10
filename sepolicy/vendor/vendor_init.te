@@ -15,5 +15,7 @@ allow init adsprpcd_file:file mounton;
 allow init proc:file setattr;
 set_prop(vendor_init, vendor_fm_prop)
 
+allow vendor_init proc_dirty:file write;
+
 set_prop(vendor_init, camera_prop)
 set_prop(vendor_init, vendor_power_prop)
