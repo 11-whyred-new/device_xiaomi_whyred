@@ -526,6 +526,10 @@ PRODUCT_COPY_FILES += \
 		$(DEVICE_PATH)/configs/thermal/thermal-engine-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-tgame.conf \
 		$(DEVICE_PATH)/configs/thermal/thermal-engine-high.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-high.conf
 
+# Sqlite
+PRODUCT_PACKAGES += \
+    sqlite3
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
