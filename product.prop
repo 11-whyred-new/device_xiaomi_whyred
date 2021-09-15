@@ -69,3 +69,12 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=4096
+
+# Graphics Optimizations
+debug.egl.force_msaa=1
+debug.egl.hw=1
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+debug.hwui.renderer=skiagl 
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.supports_background_blur=1 
