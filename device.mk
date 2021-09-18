@@ -105,9 +105,25 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@4.0 \
+    android.hardware.audio@4.0-impl \
+    android.hardware.audio.common@4.0 \
+    android.hardware.audio.common@4.0-util \
+    android.hardware.audio.effect@4.0 \
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio@5.0 \
     android.hardware.audio@5.0-impl \
+    android.hardware.audio.common@5.0 \
+    android.hardware.audio.common@5.0-util \
+    android.hardware.audio.effect@5.0 \
     android.hardware.audio.effect@5.0-impl \
-    android.hardware.audio.effect@2.0-service \
+    android.hardware.audio@6.0 \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.common@6.0 \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio.effect@6.0 \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio@2.0-service \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl:32 \
     audio.a2dp.default \
@@ -190,7 +206,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5:64 \
     libdng_sdk.vendor \
-    vendor.qti.hardware.camera.device@1.0:64
+    vendor.qti.hardware.camera.device@1.0:64 \
+    android.hardware.camera.common@1.0
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -548,7 +565,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     WifiOverlay \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
