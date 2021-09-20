@@ -1,10 +1,15 @@
 # rm -rf 
-rm -rf hardware/qcom-caf/msm8998/display
-rm -rf hardware/qcom-caf/msm8998/media
-rm -rf hardware/qcom-caf/msm8998/audio
+#rm -rf hardware/qcom-caf/msm8998/display
+#rm -rf hardware/qcom-caf/msm8998/media
+#rm -rf hardware/qcom-caf/msm8998/audio
 #rm -rf frameworks/base
 #rm -rf packages/apps/Settings
+<<<<<<< HEAD
 #rm -rf frameworks/av#
+=======
+#rm -rf frameworks/av
+#rm -rf vendor/MiuiCamera
+>>>>>>> a6265f1... add
 #rm -rf kernel/xiaomi/whyred
 # git clone
 <<<<<<< HEAD
@@ -18,8 +23,13 @@ git clone https://github.com/LineageOS/android_hardware_qcom_media -b lineage-18
 >>>>>>> 8ddf092... sdm660-common: Update thermal blobs from lemon
 #git clone https://github.com/dotMod/android_frameworks_base -b dot11 frameworks/base
 #git clone https://github.com/dotMod/android_packages_apps_Settings -b dot11 packages/apps/Settings
+<<<<<<< HEAD
 #git clone https://github.com/dotMod/android_frameworks_av-1 -b dot11 frameworks/av
 #git clone https://github.com/11-whyred-new/MiuiCamera -b cr-9.0 vendor/MiuiCamera
+=======
+git clone https://github.com/dotMod/android_frameworks_av-1 -b dot11 frameworks/av
+git clone https://github.com/11-whyred-new/MiuiCamera -b cr-9.0 vendor/MiuiCamera
+>>>>>>> a6265f1... add
 git clone https://github.com/predator112/whyred-4.19 -b lineage-18.1 kernel/xiaomi/whyred
 #rm -rf external/tinycompress
 git clone https://github.com/pkm774/external_tinycompress -b ks-aosp.lnx.3.0.r15-rel external/tinycompress
