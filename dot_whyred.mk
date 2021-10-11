@@ -31,6 +31,7 @@ DOT_BUILD_TYPE := UNOFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_BLUR := true
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
