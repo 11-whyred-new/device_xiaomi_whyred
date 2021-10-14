@@ -1,0 +1,14 @@
+LOCAL_PATH := $(call my-dir)
+
+# SimpleGallery
+include $(CLEAR_VARS)
+LOCAL_MODULE := SimpleGallery
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := priv-app/SimpleGallery/SimpleGallery.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_OVERRIDES_PACKAGES := Gallery Gallery2 Gallery3D GalleryNew3D
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)

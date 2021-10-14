@@ -561,6 +561,10 @@ PRODUCT_PACKAGES += \
  libhwbinder \
  libhwbinder.vendor
 
+# Gallery
+PRODUCT_PACKAGES += \
+    SimpleGallery
+
 # Media addons
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor
