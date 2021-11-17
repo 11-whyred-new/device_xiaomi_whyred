@@ -14,9 +14,11 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_whyred.mk
+    $(LOCAL_DIR)/dot_whyred.mk \
+    $(LOCAL_DIR)/whyred.mk
 
 COMMON_LUNCH_CHOICES := \
     dot_whyred-user \
     dot_whyred-userdebug \
-    dot_whyred-eng
+    dot_whyred-eng \
+    whyred-userdebug
