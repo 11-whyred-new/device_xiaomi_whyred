@@ -23,6 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/dot/config/common.mk)
 
 # DotOS Properties
+EXTRA_FOD_ANIMATIONS := true
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
@@ -33,6 +34,8 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
 
+# Lawnchair Launcher
+#$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
