@@ -14,3 +14,5 @@ type dirac_prop, property_type;
 type power_prop, property_type;
 type vendor_thermal_prop, property_type;
 type camera_ro_prop, property_type;
+
+type fm_prop, property_type;
