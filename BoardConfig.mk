@@ -74,7 +74,7 @@ KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
-TARGET_KERNEL_CONFIG := whyred-oldcam_defconfig
+TARGET_KERNEL_CONFIG := whyred_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
@@ -135,6 +135,8 @@ TARGET_ENABLE_MEDIADRM_64 := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
+BOARD_HAVE_QCOM_FM := true
 
 # FM
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
