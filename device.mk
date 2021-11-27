@@ -609,3 +609,8 @@ PRODUCT_COPY_FILES += \
 # Iorap
 PRODUCT_PACKAGES += \
     iorap-app-startup-runner
+
+# mod
+PRODUCT_PACKAGES += \
+    dotOSModOverlay-SystemUI \
+    dotOSModOverlay-framework-res
