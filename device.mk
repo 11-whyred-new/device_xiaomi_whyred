@@ -35,6 +35,12 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Dexpreopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
+    SystemUI
+
 # Bluetooth
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
@@ -591,3 +597,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/Youtube/lib/arm/libwebp_android.so:$(TARGET_COPY_OUT_SYSTEM)/app/Youtube/lib/arm/libwebp_android.so \
 	$(LOCAL_PATH)/Youtube/lib/arm/libyoga.so:$(TARGET_COPY_OUT_SYSTEM)/app/Youtube/lib/arm/libyoga.so
 
+# Iorap
+PRODUCT_PACKAGES += \
+    iorap-app-startup-runner

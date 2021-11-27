@@ -6,11 +6,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
     dalvik.vm.boot-dex2oat-threads=8 \
     dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
-    dalvik.vm.dex2oat-filter=quicken \
-    dalvik.vm.dex2oat-threads=4 \
-    dalvik.vm.image-dex2oat-cpu-set=4,5,6,7 \
-    dalvik.vm.image-dex2oat-filter=quicken \
-    dalvik.vm.image-dex2oat-threads=4
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.dex2oat-threads=8 \
+    dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.image-dex2oat-filter=speed \
+    dalvik.vm.image-dex2oat-threads=8
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -235,7 +235,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.calls.on.ims=1 \
     persist.dbg.wfc_avail_ovr=1
     persist.vendor.radio.add_power_save=1 \
-    ro.vendor.use_data_netmgrd=true
+    ro.vendor.use_data_netmgrd=true \
+    ro.vold.umsdirtyratio=20 \
+    ro.ril.disable.power.collapse=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.use_old_mnc_mcc_format=true \
@@ -262,3 +264,28 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.iorapd.enable=true \
     iorapd.perfetto.enable=true \
     iorapd.readahead.enable=true
+
+# Zygote preforking
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Better Ram
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.fha_enable=true \
+    ro.sys.fw.bg_apps_limit=32 \
+    ro.config.dha_cached_max=16 \
+    ro.config.dha_empty_max=42 \
+    ro.config.dha_empty_init=32 \
+    ro.config.dha_lmk_scale=0.545 \
+    ro.config.dha_th_rate=2.3 \
+    ro.config.sdha_apps_bg_max=64 \
+    ro.config.sdha_apps_bg_min=8
+
+# Boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.vendor.shutdown.waittime=500
+
+# Power saving
+PRODUCT_PROPERTY_OVERRIDES += \
+    power.saving.mode=1 \
+    pm.sleep_mode=1

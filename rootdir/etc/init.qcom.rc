@@ -721,3 +721,5 @@ on property:sys.camera.miui.apk=*
 
     start vendor.qcrild
     start vendor.qcrild2
+    enable vendor.dataqti
+    enable vendor.dataadpl
