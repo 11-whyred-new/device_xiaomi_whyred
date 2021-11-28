@@ -5,6 +5,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.depth.focus.cb=0 \
     persist.vendor.camera.exif.make=Xiaomi \
     persist.vendor.camera.expose.aux=1 \
+    persist.vendor.camera.eis.enable=1 \
+    persist.vendor.camera.is_type=5 \
     persist.vendor.camera.imglib.usefdlite=1 \
     persist.vendor.camera.isp.clock.optmz=0 \
     persist.vendor.camera.isp.turbo=1 \
@@ -18,6 +20,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.enableAdvanceFeatures=0x347 \
     persist.camera.max.previewfps=60 \
     persist.vendor.camera.max.previewfps=60
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.faceunlock,com.android.camera
 
 # Dirac
 PRODUCT_PROPERTY_OVERRIDES += \
