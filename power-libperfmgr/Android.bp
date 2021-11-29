@@ -37,6 +37,7 @@ cc_library_headers {
 cc_binary {
     name: "android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr",
     relative_install_path: "hw",
+<<<<<<< HEAD
     vintf_fragments: ["hidl/android.hardware.power@1.3-service.xiaomi_sdm660.xml"],
     init_rc: ["hidl/android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr.rc"],
     srcs: [
@@ -44,6 +45,12 @@ cc_binary {
         "hidl/Power.cpp",
         "hidl/power-helper.c",
     ],
+=======
+    vintf_fragments: ["android.hardware.power@1.3-service.pixel.xml"],
+    init_rc: ["android.hardware.power@1.3-service.pixel-libperfmgr.rc"],
+    srcs: ["service.cpp", "Power.cpp", "InteractionHandler.cpp",
+            "display-helper.cpp"],
+>>>>>>> parent of 40da4c8a... whyred: power-libperfmgr: Add back powerstats
     cflags: [
         "-Wall",
         "-Werror",
