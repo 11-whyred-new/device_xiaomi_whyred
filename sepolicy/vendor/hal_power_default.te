@@ -1,6 +1,7 @@
 allow hal_power_default sysfs_tap_to_wake:file rw_file_perms;
 allow hal_power_default proc:file rw_file_perms;
 allow hal_power_default proc:file { write };
+<<<<<<< HEAD
 r_dir_file(hal_power_default, debugfs_rpm)
 r_dir_file(hal_power_default, sysfs_graphics)
 
@@ -20,3 +21,5 @@ set_prop(hal_power_default, power_prop)
 
 # To dump
 allow hal_power_default cgroup:file read;
+=======
+>>>>>>> parent of 9473edc6... whyred: Import Pixel power HAL SELinux policy from Essentail tree
