@@ -32,6 +32,7 @@ DOT_BUILD_TYPE := REMBANG-BANGKIT
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
 
 # Lawnchair Launcher
 #$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
