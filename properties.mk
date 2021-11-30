@@ -42,7 +42,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Support night mode 2.0
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.eyecare.brightness.threshold=3 \
-    ro.eyecare.brightness.level=8\
+    ro.eyecare.brightness.level=8 \
     ro.hist.brightness.threshold=5
 
 # Temporal Noise Reduction
@@ -55,10 +55,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.tnr.snapshot=1 \
     persist.vendor.camera.tnr.snapshot=1 \
     persist.camera.llnoise=1 \
-    persist.tnr.process.plates=1 \ 
+    persist.tnr.process.plates=1 \
     persist.vendor.tnr.process.plates=1 \
     persist.denoise.process.plates=1 \
-    persist.vendor.denoise.process.plates=1 \
+    persist.vendor.denoise.process.plates=1
 
 # Dirac
 PRODUCT_PROPERTY_OVERRIDES += \
