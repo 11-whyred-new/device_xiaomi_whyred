@@ -162,6 +162,7 @@ debug.sf.high_fps_early_gl_phase_offset_ns=9000000
 debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
 vendor.display.disable_rotator_downscale=1
 debug.cpurend.vsync=false
+debug.performance.tuning=1
 
 # DPM
 persist.vendor.dpm.loglevel=0
