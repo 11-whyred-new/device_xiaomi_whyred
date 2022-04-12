@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Inherit from custom xiaomiparts vendor
+$(call inherit-product, vendor/dirac/dirac.mk)
+
 # Inherit some common DOTOS stuff
 $(call inherit-product, vendor/dot/config/common.mk)
 
@@ -40,6 +43,7 @@ DOT_BUILD_TYPE := Predator-Edition-4.19
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_GAPPS_ARCH := arm64
+TARGET_SCREEN_DENSITY := 440
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
