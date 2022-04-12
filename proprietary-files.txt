@@ -101,9 +101,6 @@ vendor/etc/camera/male_bg.png
 vendor/etc/camera/male_icon.png
 vendor/etc/camera/score_bg.png
 vendor/etc/camera/score_icon.png
-vendor/etc/MIUI_DualCamera_watermark.png
-vendor/etc/MIUI_Time.ttf
-vendor/etc/Miui-Light.ttf
 vendor/etc/camera/whyred_imx376_ofilm_global_i_chromatix.xml
 vendor/etc/camera/whyred_imx376_sunny_global_ii_chromatix.xml
 vendor/etc/camera/whyred_imx486_ofilm_global_i_chromatix.xml
