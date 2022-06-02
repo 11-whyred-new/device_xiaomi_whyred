@@ -31,6 +31,7 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 DOT_BUILD_TYPE := FINAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_GAPPS_ARCH := arm64
 
 # GCAM
 $(call inherit-product-if-exists, vendor/xiaomi/gcam/gcam.mk)
