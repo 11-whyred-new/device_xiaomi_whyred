@@ -24,17 +24,16 @@ $(call inherit-product, vendor/dot/config/common.mk)
 
 # DotOS Properties
 EXTRA_FOD_ANIMATIONS := true
-TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ARCORE := true
-DOT_BUILD_TYPE := FINAL
+DOT_BUILD_TYPE := USER-BUILD
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_GAPPS_ARCH := arm64
 
-# GCAM
-$(call inherit-product-if-exists, vendor/xiaomi/gcam/gcam.mk)
+# miuicam
+$(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -50,7 +49,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR_PRODUCT_NAME := whyred
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-   PRIVATE_BUILD_DESC="whyred-user 8.1.0 OPM1.171019.011 V9.5.11.0.OEIMIFA release-keys"
+        PRIVATE_BUILD_DESC="whyred-user $(PLATFORM_VERSION) $(BUILD_ID) $(shell date -u +%H%M) release-keys"
 
-BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
+BUILD_FINGERPRINT := xiaomi/whyred/whyred:$(PLATFORM_VERSION)/$(BUILD_ID)/$(shell date -u +%H%M):user/release-keys
 
