@@ -27,11 +27,13 @@ EXTRA_FOD_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ARCORE := true
-DOT_BUILD_TYPE := GAPPS
+DOT_BUILD_TYPE := EOL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
+
+# Inherit from custom vendor
+$(call inherit-product, vendor/LibCam/config.mk)
 
 # miuicam
 $(call inherit-product, vendor/MiuiCamera/config.mk)

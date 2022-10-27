@@ -26,3 +26,12 @@ persist.vendor.s5k3l8_ofilm.low.lux=379
 persist.vendor.camera.enableAdvanceFeatures=0x347
 persist.camera.max.previewfps=60
 persist.vendor.camera.max.previewfps=60
+
+# Dirac
+persist.dirac.acs.controller=qem
+persist.dirac.acs.storeSettings=1
+persist.dirac.acs.ignore_error=1
+
+# Dirac headset effect
+ro.audio.soundfx.dirac=true
+persist.audio.dirac.speaker=true
