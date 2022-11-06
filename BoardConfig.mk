@@ -35,7 +35,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2022-06-05
+VENDOR_SECURITY_PATCH := 2022-11-05
 
 # Inherit the proprietary files
 include vendor/xiaomi/whyred/BoardConfigVendor.mk
