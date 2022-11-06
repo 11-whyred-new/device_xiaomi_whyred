@@ -31,4 +31,9 @@ export DEVICE=whyred
 export DEVICE_COMMON=sdm660-common
 export VENDOR=xiaomi
 
+sed -i 's/libicuuc.so/libicuuq.so/g' "$BLOB_ROOT"/vendor/lib/libicuuq.so
+sed -i 's/libicuuc.so/libicuuq.so/g' "$BLOB_ROOT"/vendor/lib/libMiWatermark.so
+sed -i 's/libminikin.so/libminikiq.so/g' "$BLOB_ROOT"/vendor/lib/libMiWatermark.so
+sed -i 's/libui.so/libuq.so/g' "$BLOB_ROOT"/vendor/lib/hw/camera.sdm660.so
+
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
